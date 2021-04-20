@@ -15,5 +15,7 @@ class  PIN_Validation
 	{
 		String PIN1="A400088";
 		System.out.println(PIN1 + ": "+ isValidPinCode(PIN1));
+		String PIN2="400088B";
+		System.out.println(PIN2 + ": "+ isValidPinCode(PIN2));
 	}
 }
