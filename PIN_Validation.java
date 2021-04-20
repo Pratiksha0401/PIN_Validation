@@ -3,7 +3,7 @@ class  PIN_Validation
 {
 	public static boolean isValidPinCode(String pinCode)
     {
-		String regex= "^[1-9]{1}[0-9]{2}{0,1}[0-9]{3}$";
+		String regex= "^[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$";
 		Pattern p = Pattern.compile(regex);
 		if (pinCode == null) {
             return false;
@@ -17,5 +17,7 @@ class  PIN_Validation
 		System.out.println(PIN1 + ": "+ isValidPinCode(PIN1));
 		String PIN2="400088B";
 		System.out.println(PIN2 + ": "+ isValidPinCode(PIN2));
+		String PIN3="400 088";
+		System.out.println(PIN3 + ": "+ isValidPinCode(PIN3));
 	}
 }
